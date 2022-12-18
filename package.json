@@ -1,7 +1,7 @@
 {
 	"name": "my-linktree",
 	"version": "0.1.0",
-	"private": true,
+	"private": false,
 	"homepage": "https://ruggeryiury.github.io/my-linktree",
 	"dependencies": {
 		"@testing-library/jest-dom": "^5.16.5",
