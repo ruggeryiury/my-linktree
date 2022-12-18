@@ -1,0 +1,72 @@
+// Tailwind import
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Fonts
+@font-face {
+    font-family: "SF Pro Display";
+    font-weight: 100;
+    src: url("../fonts/SFProDisplay-Ultralight.otf") format("opentype"),
+    url("../fonts/SFProDisplay-Ultralight.woff") format("woff")
+}
+@font-face {
+    font-family: "SF Pro Display";
+    font-weight: 200;
+    src: url("../fonts/SFProDisplay-Thin.otf") format("opentype"),
+    url("../fonts/SFProDisplay-Thin.woff") format("woff")
+}
+@font-face {
+    font-family: "SF Pro Display";
+    font-weight: 300;
+    src: url("../fonts/SFProDisplay-Light.otf") format("opentype"),
+    url("../fonts/SFProDisplay-Light.woff") format("woff")
+}
+@font-face {
+    font-family: "SF Pro Display";
+    font-weight: 400;
+    src: url("../fonts/SFProDisplay-Regular.otf") format("opentype"),
+    url("../fonts/SFProDisplay-Regular.woff") format("woff")
+}
+@font-face {
+    font-family: "SF Pro Display";
+    font-weight: 500;
+    src: url("../fonts/SFProDisplay-Medium.otf") format("opentype"),
+    url("../fonts/SFProDisplay-Medium.woff") format("woff")
+}
+@font-face {
+    font-family: "SF Pro Display";
+    font-weight: 600;
+    src: url("../fonts/SFProDisplay-Semibold.otf") format("opentype"),
+    url("../fonts/SFProDisplay-Semibold.woff") format("woff")
+}
+@font-face {
+    font-family: "SF Pro Display";
+    font-weight: 700;
+    src: url("../fonts/SFProDisplay-Bold.otf") format("opentype"),
+    url("../fonts/SFProDisplay-Bold.woff") format("woff")
+}
+@font-face {
+    font-family: "SF Pro Display";
+    font-weight: 800;
+    src: url("../fonts/SFProDisplay-Heavy.otf") format("opentype"),
+    url("../fonts/SFProDisplay-Heavy.woff") format("woff")
+}
+@font-face {
+    font-family: "SF Pro Display";
+    font-weight: 900;
+    src: url("../fonts/SFProDisplay-Black.otf") format("opentype"),
+    url("../fonts/SFProDisplay-Black.woff") format("woff")
+}
+
+// Globals
+* {
+    margin: 0;
+    line-height: 1 !important;
+}
+body {
+    @apply flex bg-center bg-fixed bg-main-white text-center text-main-black font-sfpro subpixel-antialiased w-full justify-center font-medium px-4;
+}
+#root {
+    @apply flex flex-col items-center w-full;
+}
