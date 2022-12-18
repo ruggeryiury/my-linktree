@@ -1,11 +1,5 @@
-
 # My Linktree
-
-  
-
 Linktree houses all the important links that you want to share with your audience, as a social-linking service. This Linktree was created from scratch using **React + TypeScript**.
-
-  
 
 # 💠 Table of Contents
 - [Project Dependencies](#%EF%B8%8F-project-dependencies)
