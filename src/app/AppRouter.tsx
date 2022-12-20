@@ -1,6 +1,6 @@
 import { useContext, useEffect } from "react"
 import { AppContext } from "./AppProvider"
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route } from "react-router-dom"
 import IndexPage from "../pages/IndexPage"
 
 const AppRouter = () => {
