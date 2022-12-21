@@ -14,6 +14,7 @@ interface LinksDocument {
 interface LinksOptionsDocument {
     name: string
     user: string
+    link: string
 }
 
 /**
@@ -23,8 +24,8 @@ interface LinksOptionsDocument {
  * @param uppercase {boolean} If ``true``, it'll automatically convert the given string to uppercase. *Default:* `false`
  * @returns {string} The required social network information.
  */
-const getSocialNetworks = (type: string, value: string, uppercase: boolean = false): string => {
-    return uppercase ? Links[type as keyof LinksDocument][value as keyof LinksOptionsDocument].toUpperCase() : Links[type as keyof LinksDocument][value as keyof LinksOptionsDocument]
+const getSocialNetworks = (type: string, value: string): string => {
+    return Links[type as keyof LinksDocument][value as keyof LinksOptionsDocument]
 }
 
 export default getSocialNetworks

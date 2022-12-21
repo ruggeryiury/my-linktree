@@ -1,19 +1,23 @@
 {
     "facebook": {
         "name": "Facebook",
-        "user": "Ruggery Iury Corrêa"
+        "user": "Ruggery Iury Corrêa",
+        "link": "https://www.facebook.com/ruggeryiury/"
     },
     "twitter": {
         "name": "Twitter",
-        "user": "@therogerland"
+        "user": "@therogerland",
+        "link": "https://twitter.com/therogerland"
     },
     "instagram": {
         "name": "Instagram",
-        "user": "@ruggeryiury"
+        "user": "@ruggeryiury",
+        "link": "https://www.instagram.com/ruggeryiury/"
     },
     "twitch": {
         "name": "Twitch",
-        "user": "@therogerland"
+        "user": "@therogerland",
+        "link": "https://www.twitch.tv/therogerland"
     },
     "discord": {
         "name": "Discord",
@@ -21,18 +25,25 @@
     },
     "linkedin": {
         "name": "LinkedIn",
-        "user": "Ruggery Iury Corrêa"
+        "user": "Ruggery Iury Corrêa",
+        "link": "https://www.linkedin.com/in/ruggery-iury-corr%C3%AAa-26b0a117b/"
     },
     "github": {
         "name": "GitHub",
-        "user": "@ruggeryiury"
+        "user": "@ruggeryiury",
+        "link": "https://github.com/ruggeryiury"
     },
     "soundcloud": {
         "name": "SoundCloud",
-        "user": "@ruggeryiury"
+        "user": "@ruggeryiury",
+        "link": "https://soundcloud.com/ruggeryiury"
     },
     "gmail": {
         "name": "Gmail",
-        "user": "ruggeryiury@gmail.com"
+        "user": "ruggeryiury@gmail.com",
+        "link": "mailto:ruggeryiury@gmail.com"
+    },
+    "ngl": {
+        "link": "https://ngl.link/ruggeryiury"
     }
 }

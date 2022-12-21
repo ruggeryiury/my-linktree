@@ -9,7 +9,6 @@ const IndexPage = () => {
         <>
             <LinkModals />
 
-            
             <ProfileImage lang={Context.lang} />
             <WelcomeText lang={Context.lang} />
             <IndexDesc lang={Context.lang} />

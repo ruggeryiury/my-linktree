@@ -19,6 +19,10 @@ export interface LocaleDocument {
     soundcloud_desc: string;
     gmail_desc: string;
     ngl_desc: string;
+    access_link: string;
+    ngl_link: string;
+    send_email: string;
+    copy_user: string;
 }
 
 const localePTBR: LocaleDocument = require('../locale/pt-BR.json')
