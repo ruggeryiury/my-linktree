@@ -22,5 +22,8 @@
     "access_link": "Acessar Link da Conta",
     "ngl_link": "Pergunte-me Anonimamente",
     "send_email": "Me Envie um E-mail",
-    "copy_user": "Copiar Usuário"
+    "copy_user": "Copiar Usuário",
+    "copy_successfully": "Usuário copiado com sucesso",
+    "copy_email": "Copiar Endereço de E-mail",
+    "copy_email_successfully": "Endereço de E-mail copiado com sucesso"
 }

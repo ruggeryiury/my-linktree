@@ -26,6 +26,22 @@ module.exports = {
 				'main-white': '#EEE',
 				'main-black': '#111'
 			},
+			animation: {
+				copytext: 'copyText 200ms linear forwards'
+			},
+			keyframes: {
+				copyText: {
+					'0%': {
+						transform: 'scaleY(1)'
+					},
+					'50%': {
+						transform: 'scaleY(0)'
+					},
+					'100%': {
+						transform: 'scaleY(1)'
+					}
+				}
+			}
 		},
 	},
 	plugins: [

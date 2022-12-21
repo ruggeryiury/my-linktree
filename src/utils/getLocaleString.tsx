@@ -23,6 +23,9 @@ export interface LocaleDocument {
     ngl_link: string;
     send_email: string;
     copy_user: string;
+    copy_successfully: string;
+    copy_email: string;
+    copy_email_successfully: string;
 }
 
 const localePTBR: LocaleDocument = require('../locale/pt-BR.json')
