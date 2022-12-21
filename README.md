@@ -25,3 +25,5 @@ Linktree houses all the important links that you want to share with your audienc
 	-  *Install with NPM:*  `npm i -D gh-pages`
 
 ## 🔄 Changelog
+- See the [Changelog](https://github.com/ruggeryiury/my-linktree/blob/master/CHANGELOG.md).
+	- *Current version: 0.2.0*
