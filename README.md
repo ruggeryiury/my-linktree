@@ -4,6 +4,7 @@ Linktree houses all the important links that you want to share with your audienc
 # 💠 Table of Contents
 - [Features](#-features)
 - [Technologies](#%EF%B8%8F-technologies)
+- [Changelog](#-changelog)
 
 ## 🚀 Features
 - **Fully Responsive:** This web app was created under the *mobile-first*  concept. Responsive web design is a web design method that enables web to fit the screens of different devices automatically, displaying the content in a way that people feel comfortable. This greatly reduces users’ operations like panning, zooming and scrolling when browsing the web. *Mobile first*, as the name suggests, means that I started the product design from the mobile end which has more restrictions, then expand its features to create a tablet or desktop version.
@@ -22,3 +23,5 @@ Linktree houses all the important links that you want to share with your audienc
 	-  *Install with NPM:*  `npm i sass`
 - [Github Pages](https://www.npmjs.com/package/gh-pages): Publish to a gh-pages branch on GitHub (or any other branch on any other remote).
 	-  *Install with NPM:*  `npm i -D gh-pages`
+
+## 🔄 Changelog
