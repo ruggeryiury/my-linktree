@@ -4,6 +4,7 @@ import { FaFacebookSquare, FaGithub, FaInstagram, FaLinkedin, FaTwitterSquare } 
 import { ImTwitch, ImSoundcloud2 } from "react-icons/im"
 import { RiQuestionnaireFill } from "react-icons/ri"
 import { SiGmail } from "react-icons/si"
+import { ReactComponentWithType, ReactComponentWithLangAndType, ReactComponentWithLangAndBooleanAction } from "../@types/components"
 import { AppContext } from "../app/AppProvider"
 import getLocaleString from "../utils/getLocaleString"
 import getSocialNetworks from "../utils/getSocialNetworks"
@@ -16,37 +17,37 @@ const LinkModalBG: React.FC<React.PropsWithChildren> = ({ children }) => {
     )
 }
 
-const LinkModalIcons: React.FC<{ type: string }> = ({ type }) => {
+const LinkModalIcons: React.FC<ReactComponentWithType> = ({ type }) => {
     if (type === 'facebook') {
-        return <FaFacebookSquare className={`w-[1.8rem] h-[1.8rem] mb-2`} />
+        return <FaFacebookSquare className={`w-[1.8rem] h-[1.8rem] tablet:w-[2.2rem] tablet:h-[2.2rem] laptop:w-[2.8rem] laptop:h-[2.8rem] mb-2`} />
     } else if (type === 'twitter') {
-        return <FaTwitterSquare className={`w-[1.8rem] h-[1.8rem] mb-2`} />
+        return <FaTwitterSquare className={`w-[1.8rem] h-[1.8rem] tablet:w-[2.2rem] tablet:h-[2.2rem] laptop:w-[2.8rem] laptop:h-[2.8rem] mb-2`} />
     } else if (type === 'instagram') {
-        return <FaInstagram className={`w-[1.8rem] h-[1.8rem] mb-2`} />
+        return <FaInstagram className={`w-[1.8rem] h-[1.8rem] tablet:w-[2.2rem] tablet:h-[2.2rem] laptop:w-[2.8rem] laptop:h-[2.8rem] mb-2`} />
     } else if (type === 'twitch') {
-        return <ImTwitch className={`w-[1.8rem] h-[1.8rem] mb-2`} />
+        return <ImTwitch className={`w-[1.8rem] h-[1.8rem] tablet:w-[2.2rem] tablet:h-[2.2rem] laptop:w-[2.8rem] laptop:h-[2.8rem] mb-2`} />
     } else if (type === 'discord') {
-        return <BsDiscord className={`w-[1.8rem] h-[1.8rem] mb-2`} />
+        return <BsDiscord className={`w-[1.8rem] h-[1.8rem] tablet:w-[2.2rem] tablet:h-[2.2rem] laptop:w-[2.8rem] laptop:h-[2.8rem] mb-2`} />
     } else if (type === 'linkedin') {
-        return <FaLinkedin className={`w-[1.8rem] h-[1.8rem] mb-2`} />
+        return <FaLinkedin className={`w-[1.8rem] h-[1.8rem] tablet:w-[2.2rem] tablet:h-[2.2rem] laptop:w-[2.8rem] laptop:h-[2.8rem] mb-2`} />
     } else if (type === 'github') {
-        return <FaGithub className={`w-[1.8rem] h-[1.8rem] mb-2`} />
+        return <FaGithub className={`w-[1.8rem] h-[1.8rem] tablet:w-[2.2rem] tablet:h-[2.2rem] laptop:w-[2.8rem] laptop:h-[2.8rem] mb-2`} />
     } else if (type === 'soundcloud') {
-        return <ImSoundcloud2 className={`w-[1.8rem] h-[1.8rem] mb-2`} />
+        return <ImSoundcloud2 className={`w-[1.8rem] h-[1.8rem] tablet:w-[2.2rem] tablet:h-[2.2rem] laptop:w-[2.8rem] laptop:h-[2.8rem] mb-2`} />
     } else if (type === 'gmail') {
-        return <SiGmail className={`w-[1.8rem] h-[1.8rem] mb-2`} />
+        return <SiGmail className={`w-[1.8rem] h-[1.8rem] tablet:w-[2.2rem] tablet:h-[2.2rem] laptop:w-[2.8rem] laptop:h-[2.8rem] mb-2`} />
     } else if (type === 'ngl') {
-        return <RiQuestionnaireFill className={`w-[1.8rem] h-[1.8rem] mb-2`} />
+        return <RiQuestionnaireFill className={`w-[1.8rem] h-[1.8rem] tablet:w-[2.2rem] tablet:h-[2.2rem] laptop:w-[2.8rem] laptop:h-[2.8rem] mb-2`} />
     } else {
         return null
     }
 }
 
-const LinkModalDesc: React.FC<{ type: string, lang: string }> = ({ type, lang }) => {
-    return type ? <h1 className="w-full px-8 font-normal text-sm text-main-white/75 mb-4">{getLocaleString(`${type}_desc`, lang)}</h1> : null
+const LinkModalDesc: React.FC<ReactComponentWithLangAndType> = ({ type, lang }) => {
+    return type ? <h1 className="w-full px-8 font-normal text-sm tablet:text-base text-main-white/75 mb-4">{getLocaleString(`${type}_desc`, lang)}</h1> : null
 }
 
-const LinkModalOptions: React.FC<{ type: string, lang: string }> = ({ type, lang }) => {
+const LinkModalOptions: React.FC<ReactComponentWithLangAndType> = ({ type, lang }) => {
     const OpenTab = () => {
         window.open(getSocialNetworks(type, 'link'), "_blank")
     }
@@ -93,29 +94,29 @@ const LinkModalOptions: React.FC<{ type: string, lang: string }> = ({ type, lang
             <>
                 {
                     type === 'facebook' || type === 'twitter' || type === 'instagram' || type === 'twitch' || type === 'linkedin' || type === 'github' || type === 'soundcloud' ? (
-                        <button className="font-light text-lg w-full h-12 bg-transparent hover:bg-[#ffffff0f] duration-100" onClick={ev => OpenTab()} >{getLocaleString(`access_link`, lang)}</button>
+                        <button className="font-light text-lg tablet:text-xl w-full h-12 tablet:h-14 bg-transparent hover:bg-[#ffffff0f] duration-100" onClick={ev => OpenTab()} >{getLocaleString(`access_link`, lang)}</button>
                     ) : null
                 }
                 {
                     type === 'ngl' ? (
-                        <button className="font-light text-lg w-full h-12 bg-transparent hover:bg-[#ffffff0f] duration-100" onClick={ev => OpenTab()} >{getLocaleString(`ngl_link`, lang)}</button>
+                        <button className="font-light text-lg tablet:text-xl w-full h-12 tablet:h-14 bg-transparent hover:bg-[#ffffff0f] duration-100" onClick={ev => OpenTab()} >{getLocaleString(`ngl_link`, lang)}</button>
                     ) : null
                 }
                 {
                     type === 'gmail' ? (
-                        <button className="font-light text-lg w-full h-12 bg-transparent hover:bg-[#ffffff0f] duration-100" onClick={ev => OpenTab()} >{getLocaleString(`send_email`, lang)}</button>
+                        <button className="font-light text-lg tablet:text-xl w-full h-12 tablet:h-14 bg-transparent hover:bg-[#ffffff0f] duration-100" onClick={ev => OpenTab()} >{getLocaleString(`send_email`, lang)}</button>
                     ) : null
                 }
                 {
                     type === 'twitter' || type === 'instagram' || type === 'twitch' || type === 'discord' || type === 'github' || type === 'soundcloud' ? (
-                        <button className="flex font-light text-lg w-full h-12 items-center bg-transparent hover:bg-[#ffffff0f] duration-100 justify-center" onClick={ev => CopyToClipboard()} >
+                        <button className="flex font-light text-lg tablet:text-xl w-full h-12 tablet:h-14 items-center bg-transparent hover:bg-[#ffffff0f] duration-100 justify-center" onClick={ev => CopyToClipboard()} >
                             <span id='copyUserText' className="flex">{getLocaleString(`copy_user`, lang)}</span>
                         </button>
                     ) : null
                 }
                 {
                     type === 'gmail' ? (
-                        <button className="flex font-light text-lg w-full h-12 items-center bg-transparent hover:bg-[#ffffff0f] duration-100 justify-center px-6" onClick={ev => CopyToClipboard('email')} >
+                        <button className="flex font-light text-lg tablet:text-xl w-full h-12 tablet:h-14 items-center bg-transparent hover:bg-[#ffffff0f] duration-100 justify-center px-6" onClick={ev => CopyToClipboard('email')} >
                             <span id='copyUserText' className="flex">{getLocaleString(`copy_email`, lang)}</span>
                         </button>
                     ) : null
@@ -127,10 +128,10 @@ const LinkModalOptions: React.FC<{ type: string, lang: string }> = ({ type, lang
     }
 }
 
-const LinkModalClose: React.FC<{ action: React.Dispatch<React.SetStateAction<boolean>>, lang: string }> = ({ action, lang }) => {
+const LinkModalClose: React.FC<ReactComponentWithLangAndBooleanAction> = ({ action, lang }) => {
 
     return (
-        <button className="text-red-500 text-lg w-full tablet:w-[24rem] bg-[#00000088] h-12 rounded-md border border-red-500 hover:bg-[#000000dd] duration-100" onClick={ev => action(false)} >{getLocaleString('close', lang)}</button>
+        <button className="text-red-500 text-lg tablet:text-xl w-full tablet:w-[24rem] bg-[#00000088] h-12 tablet:h-14 rounded-md border border-red-500 hover:bg-[#000000dd] duration-100" onClick={ev => action(false)} >{getLocaleString('close', lang)}</button>
     )
 }
 

@@ -1,9 +1,8 @@
 # Changelog
 
-## `0.2.1` December 22nd, 2022
+## `0.2.1` December 23rd, 2022
 - Added english language support, and placed english language as default.
 - Bigger texts and HTML elements on bigger screens.
-- Added EOT fonts for better font-face compatibility throughout specific browsers, [as discussed here](https://stackoverflow.com/questions/9654166/font-face-how-to-make-it-work-on-all-browsers).
 
 ## `0.2.0` December 21st, 2022
 - Link modals were vertically centered on-screen to avoid mobile buttons to appear above the "Close" button.
