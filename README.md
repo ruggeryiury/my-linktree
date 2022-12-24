@@ -28,4 +28,4 @@ Linktree houses all the important links that you want to share with your audienc
 ## 🔄 Changelog
 - See the [Changelog](https://github.com/ruggeryiury/my-linktree/blob/master/CHANGELOG.md).
 	- *Current version: 0.2.1*
-	- *Last updated: ???*
+	- *Last updated: December 23rd, 2022*
