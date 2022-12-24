@@ -1,10 +1,15 @@
-import { useContext } from "react"
+import { useContext, useEffect } from "react"
 import { AppContext } from "../app/AppProvider"
 import { IndexDesc, MyMusics, MyOther, MyProfessionalNetworks, MySocialNetworks, ProfileImage, WelcomeText } from "../components/IndexPage.components"
 import LinkModals from "../components/LinkModals"
+import setPageTitle from "../utils/setPageTitle"
 
 const IndexPage = () => {
     const Context = useContext(AppContext)
+
+    useEffect(()=>{
+        setPageTitle('Ruggery Iury: My Linktree')
+    }, [])
     return (
         <>
             <LinkModals />

@@ -1,14 +1,19 @@
 # Changelog
 
-## December 21st, 2022: `0.2.0`
+## `0.2.1` December 22nd, 2022
+- Added english language support, and placed english language as default.
+- Bigger texts and HTML elements on bigger screens.
+- Added EOT fonts for better font-face compatibility throughout specific browsers, [as discussed here](https://stackoverflow.com/questions/9654166/font-face-how-to-make-it-work-on-all-browsers).
+
+## `0.2.0` December 21st, 2022
 - Link modals were vertically centered on-screen to avoid mobile buttons to appear above the "Close" button.
 - "Copy to Clipboard" now has a reaction animation when the "Copy User to Clipboard" button is clicked.
 - Added "Copy E-mail Address" option for Gmail link.
 
-## December 20th, 2022: `0.1.1`
+## `0.1.1` December 20th, 2022
 - Better components structure.
 - "Copy User to Clipboard" functionality now works correctly.
 
-## December 18th, 2022: `0.1.0`
+## `0.1.0` December 18th, 2022
 - Initial commit
     - First environment deployment.

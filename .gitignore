@@ -23,5 +23,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-ugc2json.py
+*.py
 *.ugc
+*.eot
+*.otf

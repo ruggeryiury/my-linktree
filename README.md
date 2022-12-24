@@ -23,7 +23,9 @@ Linktree houses all the important links that you want to share with your audienc
 	-  *Install with NPM:*  `npm i sass`
 - [Github Pages](https://www.npmjs.com/package/gh-pages): Publish to a gh-pages branch on GitHub (or any other branch on any other remote).
 	-  *Install with NPM:*  `npm i -D gh-pages`
+- [UGC 2 JSON Converter](https://github.com/ruggeryiury/ugc2json_converter): A self-made Python script to generate JSON files without needing to use explicit JSON structure. It's used on this web app to create locale files, as part of the *Multi-language support* feature. 
 
 ## 🔄 Changelog
 - See the [Changelog](https://github.com/ruggeryiury/my-linktree/blob/master/CHANGELOG.md).
-	- *Current version: 0.2.0*
+	- *Current version: 0.2.1*
+	- *Last updated: ???*

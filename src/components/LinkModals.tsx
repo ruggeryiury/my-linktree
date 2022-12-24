@@ -1,4 +1,3 @@
-import userEvent from "@testing-library/user-event"
 import { useContext, useEffect } from "react"
 import { BsDiscord } from "react-icons/bs"
 import { FaFacebookSquare, FaGithub, FaInstagram, FaLinkedin, FaTwitterSquare } from "react-icons/fa"
@@ -93,7 +92,7 @@ const LinkModalOptions: React.FC<{ type: string, lang: string }> = ({ type, lang
         return (
             <>
                 {
-                    type === 'facebook' || type === 'twitter' || type === 'instagram' || type === 'twitch' || type == 'linkedin' || type === 'github' || type === 'soundcloud' ? (
+                    type === 'facebook' || type === 'twitter' || type === 'instagram' || type === 'twitch' || type === 'linkedin' || type === 'github' || type === 'soundcloud' ? (
                         <button className="font-light text-lg w-full h-12 bg-transparent hover:bg-[#ffffff0f] duration-100" onClick={ev => OpenTab()} >{getLocaleString(`access_link`, lang)}</button>
                     ) : null
                 }

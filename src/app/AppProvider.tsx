@@ -12,6 +12,7 @@ export interface AppContextDocument {
 export const AppContext = createContext({} as AppContextDocument)
 
 const AppProvider: React.FC<React.PropsWithChildren> = ({ children }) => {
+
     const [lang, setLang] = useState('pt-BR')
 
     const [isLinkSelected, setLinkSelected] = useState(false)
@@ -19,7 +20,9 @@ const AppProvider: React.FC<React.PropsWithChildren> = ({ children }) => {
 
     return (
         <AppContext.Provider value={{
-            lang, setLang, isLinkSelected, setLinkSelected, linkSelection, setLinkSelection
+            lang, setLang,
+            isLinkSelected, setLinkSelected,
+            linkSelection, setLinkSelection
         }}>
             {children}
         </AppContext.Provider>

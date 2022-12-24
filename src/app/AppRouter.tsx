@@ -6,6 +6,10 @@ import IndexPage from "../pages/IndexPage"
 const AppRouter = () => {
     const Context = useContext(AppContext)
 
+    useEffect(() => {
+        Context.setLang(navigator.language)
+    }, [])
+
     useEffect(() => { }, [Context.lang])
     return (
         <Router>
