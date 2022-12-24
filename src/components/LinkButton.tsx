@@ -19,7 +19,7 @@ const LinkButtonLayout: React.FC<React.PropsWithChildren<ReactComponentWithType>
     }
 
     return (
-        <button className='flex w-full tablet:w-[24rem] laptop:w-[32rem] items-center bg-gradient-to-br from-[#f28e26] to-[#fd644f] rounded-md px-3 py-2 mb-2 hover:scale-[101%] duration-200 text-start' onClick={ev => ActivateLinkSelection(type)}>
+        <button className='flex w-full tablet:w-[24rem] laptop:w-[32rem] items-center bg-gradient-to-br from-[#1bd05a]/90 to-[#27b0ad]/90 rounded-md px-3 py-2 mb-2 hover:scale-[101%] duration-200 text-start border border-main-black/10' onClick={ev => ActivateLinkSelection(type)}>
             {children}
         </button>
     )

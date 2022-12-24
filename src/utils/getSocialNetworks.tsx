@@ -1,21 +1,6 @@
-const Links: LinksDocument = require("../locale/links.json")
+import { LinksDocument, LinksOptionsDocument } from "../@types/locale"
 
-interface LinksDocument {
-    facebook: LinksOptionsDocument
-    twitter: LinksOptionsDocument
-    instagram: LinksOptionsDocument
-    twitch: LinksOptionsDocument
-    discord: LinksOptionsDocument
-    linkedin: LinksOptionsDocument
-    github: LinksOptionsDocument
-    soundcloud: LinksOptionsDocument
-    gmail: LinksOptionsDocument
-}
-interface LinksOptionsDocument {
-    name: string
-    user: string
-    link: string
-}
+const Links: LinksDocument = require("../locale/links.json")
 
 /**
  * **Returns information about my social networks.**

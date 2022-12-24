@@ -1,5 +1,9 @@
 # Changelog
 
+## `0.2.2` December 24th, 2022
+- Changed to color palette to an aquamarine-themed color.
+- Created sticky header.
+
 ## `0.2.1` December 23rd, 2022
 - Added english language support, and placed english language as default.
 - Bigger texts and HTML elements on bigger screens.

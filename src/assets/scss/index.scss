@@ -58,12 +58,12 @@
 body {
     @apply subpixel-antialiased flex justify-center px-4 w-full
     bg-center bg-fixed bg-main-white bg-cover bg-no-repeat
-    text-center text-main-white text-base font-sfpro font-medium
-    fill-main-white;
+    text-center text-main-white text-base font-sfpro font-medium;
 }
 #root {
     @apply flex flex-col items-center w-full;
 }
-div {
+div,
+header {
     @apply flex flex-col;
 }

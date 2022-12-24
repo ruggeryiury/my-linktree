@@ -7,6 +7,8 @@ export interface AppContextDocument {
     setLinkSelected: React.Dispatch<React.SetStateAction<boolean>>
     linkSelection: string
     setLinkSelection: React.Dispatch<React.SetStateAction<string>>
+    AppearHeader: boolean
+    setAppearHeader: React.Dispatch<React.SetStateAction<boolean>>
 }
 
 export const AppContext = createContext({} as AppContextDocument)
@@ -20,11 +22,14 @@ const AppProvider: React.FC<React.PropsWithChildren> = ({ children }) => {
     const [isLinkSelected, setLinkSelected] = useState(false)
     const [linkSelection, setLinkSelection] = useState('')
 
+    const [AppearHeader, setAppearHeader] = useState(false)
+
     return (
         <AppContext.Provider value={{
             lang, setLang,
             isLinkSelected, setLinkSelected,
-            linkSelection, setLinkSelection
+            linkSelection, setLinkSelection,
+            AppearHeader, setAppearHeader
         }}>
             {children}
         </AppContext.Provider>

@@ -5,7 +5,7 @@ import LinkButton from './LinkButton'
 
 export const ProfileImage: React.FC<ReactComponentWithLang> = ({ lang }) => {
     return (
-        <div className='justify-center items-center bg-gradient-to-br from-[#f28e26] to-[#68d8d6] rounded-full mt-6 mb-4 p-[0.25rem] mobile-lg:p-1'>
+        <div className='justify-center items-center bg-gradient-to-br from-[#1bd05a]/90 to-[#27b0ad]/90 rounded-full mt-6 mb-4 p-[0.25rem] mobile-lg:p-1'>
             <div className='justify-center items-center bg-main-white rounded-full p-1 mobile-lg:p-2'>
                 <img src={ProfileImageFile} alt={getLocaleString('profileimage_alt', lang)} className='rounded-full w-[8rem] mobile-lg:w-[10rem] tablet:w-[14rem]' />
             </div>
@@ -15,7 +15,7 @@ export const ProfileImage: React.FC<ReactComponentWithLang> = ({ lang }) => {
 
 export const WelcomeText: React.FC<ReactComponentWithLang> = ({ lang }) => {
     return (
-        <div className="bg-gradient-to-br from-[#f28e26] to-[#fd644f] rounded-md px-4 py-2 mb-2 text-base mobile-md:text-lg mobile-lg:text-xl">
+        <div className="bg-gradient-to-br from-[#1bd05a]/90 to-[#27b0ad]/90 rounded-md px-4 py-2 mb-2 text-base mobile-md:text-lg mobile-lg:text-xl border border-main-black/10">
             <h1>{getLocaleString('welcome_text', lang)}</h1>
         </div>
     )
@@ -23,7 +23,7 @@ export const WelcomeText: React.FC<ReactComponentWithLang> = ({ lang }) => {
 
 export const IndexDesc: React.FC<ReactComponentWithLang> = ({ lang }) => {
     return (
-        <p className="font-normal mb-6 text-main-black text-sm mobile-md:text-base mobile-lg:text-lg">{getLocaleString('index_desc', lang)}</p>
+        <p className="w-full tablet:w-[24rem] laptop:w-[32rem] font-normal mb-6 text-main-black text-sm mobile-md:text-base mobile-lg:text-lg">{getLocaleString('index_desc', lang)}</p>
     )
 }
 

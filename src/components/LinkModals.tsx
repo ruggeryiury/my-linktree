@@ -11,7 +11,7 @@ import getSocialNetworks from "../utils/getSocialNetworks"
 
 const LinkModalBG: React.FC<React.PropsWithChildren> = ({ children }) => {
     return (
-        <div id="LinkButtonSelectedBG" className="fixed z-10 w-full h-screen backdrop-blur-[2px] duration-200 items-center" style={{ display: 'none', backgroundColor: 'rgba(0,0,0,0)', opacity: '0%' }}>
+        <div id="LinkButtonSelectedBG" className="fixed z-10 w-full h-screen text-main-white backdrop-blur-[2px] duration-200 items-center" style={{ display: 'none', backgroundColor: 'rgba(0,0,0,0)', opacity: '0%' }}>
             {children}
         </div>
     )
