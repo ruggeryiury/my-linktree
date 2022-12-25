@@ -2,6 +2,7 @@ import { LocaleDocument } from "../@types/locale"
 
 const localePTBR: LocaleDocument = require('../locale/pt-BR.json')
 const localeENUS: LocaleDocument = require('../locale/en-US.json')
+const localeES: LocaleDocument = require('../locale/es-ES.json')
 
 /**
  * **Checks on locale files and returns a string based on the key.**
@@ -24,6 +25,14 @@ const getLocaleString = (key: string, lang: string, uppercase: boolean = false):
 
         if (text) {
             return uppercase ? localeENUS[key as keyof LocaleDocument].toUpperCase() : localeENUS[key as keyof LocaleDocument]
+        } else {
+            return key
+        }
+    } else if (lang === 'ES') {
+        const text = localeES[key as keyof LocaleDocument]
+
+        if (text) {
+            return uppercase ? localeES[key as keyof LocaleDocument].toUpperCase() : localeES[key as keyof LocaleDocument]
         } else {
             return key
         }

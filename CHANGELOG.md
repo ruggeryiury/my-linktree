@@ -1,5 +1,9 @@
 # Changelog
 
+## `0.3.0` December 25th, 2022
+- Added spanish language support.
+- Added Configuration and "Change Language" menus.
+
 ## `0.2.2` December 24th, 2022
 - Changed to color palette to an aquamarine-themed color.
 - Created sticky header.

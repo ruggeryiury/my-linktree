@@ -7,7 +7,7 @@ export const ProfileImage: React.FC<ReactComponentWithLang> = ({ lang }) => {
     return (
         <div className='justify-center items-center bg-gradient-to-br from-[#1bd05a]/90 to-[#27b0ad]/90 rounded-full mt-6 mb-4 p-[0.25rem] mobile-lg:p-1'>
             <div className='justify-center items-center bg-main-white rounded-full p-1 mobile-lg:p-2'>
-                <img src={ProfileImageFile} alt={getLocaleString('profileimage_alt', lang)} className='rounded-full w-[8rem] mobile-lg:w-[10rem] tablet:w-[14rem]' />
+                <img src={ProfileImageFile} alt={getLocaleString('profileimage_alt', lang)} className='rounded-full w-[8rem] mobile-lg:w-[9rem] tablet:w-[10rem]' />
             </div>
         </div>
     )

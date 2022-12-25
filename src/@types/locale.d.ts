@@ -1,6 +1,7 @@
 export interface LocaleDocument {
     header_title: string
     settings_title: string
+    language_setting: string
     profileimage_alt: string
     welcome_text: string
     index_desc: string
@@ -11,6 +12,7 @@ export interface LocaleDocument {
     ask_me: string
     ask_me_desc: string
     close: string
+    back: string
     facebook_desc: string
     twitter_desc: string
     instagram_desc: string
@@ -29,8 +31,9 @@ export interface LocaleDocument {
     copy_email: string
     copy_email_successfully: string
 
-    english_lang: string
-    portuguese_lang: string
+    EN_lang: string
+    PT_lang: string
+    ES_lang: string
 }
 
 export interface LinksDocument {
