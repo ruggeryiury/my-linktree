@@ -30,6 +30,7 @@ export interface LocaleDocument {
     copy_successfully: string
     copy_email: string
     copy_email_successfully: string
+    scrolltotop_title: string
 
     EN_lang: string
     PT_lang: string

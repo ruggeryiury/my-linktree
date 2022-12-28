@@ -2,13 +2,24 @@ import { useContext, useEffect } from "react"
 import { AppContext } from "./AppProvider"
 import { HashRouter as Router, Routes, Route } from "react-router-dom"
 import IndexPage from "../pages/IndexPage"
-import LangSelector from "../utils/LangSelector"
+import langParser from "../utils/langParser"
+import getUserSession from "../utils/getUserSession"
 
 const AppRouter = () => {
     const Context = useContext(AppContext)
 
+    const ManipulateUserSession = () => {
+        const session = getUserSession()
+
+        if (session) {
+            Context.setLang(session.lang)
+        } else {
+            Context.setLang(langParser(navigator.language))
+        }
+    }
+
     useEffect(() => {
-        Context.setLang(LangSelector(navigator.language))
+        ManipulateUserSession()
     }, [])
 
     useEffect(() => { }, [Context.lang])

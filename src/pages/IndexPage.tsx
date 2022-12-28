@@ -15,7 +15,6 @@ function IndexPage() {
     useEffect(() => {
         setPageTitle('Ruggery Iury: My Linktree')
         window.addEventListener('scroll', ev => HandleScroll((ev.currentTarget as Window).scrollY))
-
         return window.removeEventListener('scroll', ev => HandleScroll((ev.currentTarget as Window).scrollY))
     }, [])
     return (

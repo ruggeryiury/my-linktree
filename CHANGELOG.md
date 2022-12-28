@@ -1,7 +1,11 @@
 # Changelog
 
+## `0.4.0` December 28th, 2022
+- Now, the "Change Language" menu saves the preferred language into the `localStorate` as you change the language for the first time.
+- Added "Scrool to Top" feature on header.
+
 ## `0.3.0` December 25th, 2022
-- Added spanish language support.
+- Added Spanish language support.
 - Added Configuration and "Change Language" menus.
 
 ## `0.2.2` December 24th, 2022

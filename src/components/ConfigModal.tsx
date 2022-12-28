@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from "react"
 import { AppContext } from "../app/AppProvider"
 import { IoIosSettings } from 'react-icons/io'
 import { SlArrowRight } from 'react-icons/sl'
-import { BiCheckbox, BiCheckboxChecked } from 'react-icons/bi'
+import { IoIosSquareOutline, IoIosCheckboxOutline } from 'react-icons/io'
 import getLocaleString from "../utils/getLocaleString"
 
 const InitModal = () => {
@@ -42,27 +42,32 @@ const ChangeLangModal = () => {
         Context.setConfigScreen('init')
     }
 
+    const SaveLang = (lang: string) => {
+        Context.setLang(lang)
+        localStorage.setItem('lang', lang)
+    }
+
     return (
         <div id="LangSelection" className="fixed font-normal h-screen px-4 w-full duration-200 justify-center items-center" style={{ left: '100%' }}>
             <div className="w-full tablet:w-[24rem] mb-2 border bg-[#00000088] rounded-md pt-3 border-main-white/50 items-center">
                 <IoIosSettings className={`w-[1.8rem] h-[1.8rem] tablet:w-[2.2rem] tablet:h-[2.2rem] laptop:w-[2.8rem] laptop:h-[2.8rem] mb-2`} />
                 <h1 className="w-full px-8 font-normal text-sm tablet:text-base text-main-white/75 mb-4">{`${getLocaleString('settings_title', Context.lang)}/${getLocaleString('language_setting', Context.lang)}`}</h1>
                 <div className="bg-[#333] w-full h-[1px]" />
-                <button className="flex items-center px-4 tablet:px-6 text-start font-light text-lg tablet:text-xl w-full h-12 tablet:h-14 bg-transparent hover:bg-[#ffffff0f] duration-100" onClick={ev => Context.setLang('EN')}>
+                <button className="flex items-center px-4 tablet:px-6 text-start font-light text-lg tablet:text-xl w-full h-12 tablet:h-14 bg-transparent hover:bg-[#ffffff0f] duration-100" onClick={ev => SaveLang('EN')}>
                     {
-                        Context.lang === 'EN' ? <BiCheckboxChecked className="mr-2" /> : <BiCheckbox className="mr-2" />
+                        Context.lang === 'EN' ? <IoIosCheckboxOutline className="mr-2 text-2xl" /> : <IoIosSquareOutline className="mr-2 text-2xl" />
                     }
                     {getLocaleString('EN_lang', Context.lang)}
                 </button>
-                <button className="flex items-center px-4 tablet:px-6 text-start font-light text-lg tablet:text-xl w-full h-12 tablet:h-14 bg-transparent hover:bg-[#ffffff0f] duration-100" onClick={ev => Context.setLang('PT')}>
+                <button className="flex items-center px-4 tablet:px-6 text-start font-light text-lg tablet:text-xl w-full h-12 tablet:h-14 bg-transparent hover:bg-[#ffffff0f] duration-100" onClick={ev => SaveLang('PT')}>
                     {
-                        Context.lang === 'PT' ? <BiCheckboxChecked className="mr-2" /> : <BiCheckbox className="mr-2" />
+                        Context.lang === 'PT' ? <IoIosCheckboxOutline className="mr-2 text-2xl" /> : <IoIosSquareOutline className="mr-2 text-2xl" />
                     }
                     {getLocaleString('PT_lang', Context.lang)}
                 </button>
-                <button className="flex items-center px-4 tablet:px-6 text-start font-light text-lg tablet:text-xl w-full h-12 tablet:h-14 bg-transparent hover:bg-[#ffffff0f] duration-100" onClick={ev => Context.setLang('ES')}>
+                <button className="flex items-center px-4 tablet:px-6 text-start font-light text-lg tablet:text-xl w-full h-12 tablet:h-14 bg-transparent hover:bg-[#ffffff0f] duration-100" onClick={ev => SaveLang('ES')}>
                     {
-                        Context.lang === 'ES' ? <BiCheckboxChecked className="mr-2" /> : <BiCheckbox className="mr-2" />
+                        Context.lang === 'ES' ? <IoIosCheckboxOutline className="mr-2 text-2xl" /> : <IoIosSquareOutline className="mr-2 text-2xl" />
                     }
                     {getLocaleString('ES_lang', Context.lang)}
                 </button>
@@ -108,19 +113,15 @@ const ConfigModal = () => {
         } else if (Context.configScreen === 'lang') {
             ConfigSelection.style.left = '-100%'
             LangSelection.style.left = '0'
-        } else {
-
-        }
+        } else { }
     }
 
     useEffect(() => {
         ManipulateConfigModals()
-        console.log('config ac')
     }, [Context.isConfigActivated])
 
     useEffect(() => {
         ManipulateInnerConfig()
-        console.log('inner config')
     }, [Context.configScreen])
 
     return (

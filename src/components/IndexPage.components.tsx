@@ -64,7 +64,7 @@ export const MyOther: React.FC<ReactComponentWithLang> = ({ lang }) => {
         <div className="items-center w-full mb-4">
             <h1 className="font-bold text-xs tablet:text-sm laptop:text-base text-main-black mb-2">{getLocaleString('my_other', lang, true)}</h1>
             <LinkButton type="gmail" />
-            {/* <LinkButton type="ngl" /> */}
+            <LinkButton type="ngl" />
         </div>
     )
 }
