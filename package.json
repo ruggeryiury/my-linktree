@@ -1,6 +1,6 @@
 {
 	"name": "my-linktree",
-	"version": "0.3.1",
+	"version": "0.4.1",
 	"description": "My own Linktree created by scratch.",
 	"keywords": ["linktree", "linktree-custom"],
 	"private": false,

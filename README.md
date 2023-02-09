@@ -12,7 +12,9 @@ Linktree houses all the important links that you want to share with your audienc
 - **Multi-language support**: This web app has multi-language support, based on the client's navigator language. Basically, all text strings are functions that return strings based on key codes given as parameters on these funcions, that reads from locale files based on the client's navigator language. The language can be changed into the web app settings, located on the header that appears when you scroll down the page.
 
 ## ⚙️ Technologies
-- [React App](https://create-react-app.dev/), using [TypeScript](https://www.typescriptlang.org/) template.
+- [React App](https://create-react-app.dev/), using [TypeScript](https://www.typescriptlang.org/) +  template.
+	- [Node template information](https://www.npmjs.com/package/cra-template-pwa-typescript)
+	- *Start with NPM:* `npx create-react-app . --template pwa-typescript`
 - [Tailwind CSS](https://tailwindcss.com/): A utility-first CSS framework packed with classes that can be composed to build any design, directly in your markup.
 	-  *Install with NPM:*  `npm i -D tailwindcss`
 - [React Router DOM](https://www.npmjs.com/package/react-router-dom): Declarative routing for React web applications.
@@ -27,5 +29,5 @@ Linktree houses all the important links that you want to share with your audienc
 
 ## 🔄 Changelog
 - See the [Changelog](https://github.com/ruggeryiury/my-linktree/blob/master/CHANGELOG.md).
-	- *Current version: 0.4.0*
+	- *Current version: 0.4.1*
 	- *Deployed ver: 0.4.0*
