@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react"
+import { useContext, useEffect } from "react"
 import { AppContext } from "../app/AppProvider"
 import { IoIosSettings } from 'react-icons/io'
 import { SlArrowRight } from 'react-icons/sl'
