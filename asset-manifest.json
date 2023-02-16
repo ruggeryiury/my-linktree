@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-linktree/static/css/main.fe5ac604.css",
-    "main.js": "/my-linktree/static/js/main.4c2e43ae.js",
+    "main.js": "/my-linktree/static/js/main.ba5a7077.js",
     "static/media/SFProDisplay-Semibold.woff": "/my-linktree/static/media/SFProDisplay-Semibold.51631b154e69ebcdd07a.woff",
     "static/media/SFProDisplay-Heavy.woff": "/my-linktree/static/media/SFProDisplay-Heavy.462e6bbc9019e0c62d75.woff",
     "static/media/SFProDisplay-Medium.woff": "/my-linktree/static/media/SFProDisplay-Medium.39fa2911d100f3795337.woff",
@@ -12,12 +12,13 @@
     "static/media/SFProDisplay-Black.woff": "/my-linktree/static/media/SFProDisplay-Black.618875c025b16c4a46c9.woff",
     "static/media/SFProDisplay-Regular.woff": "/my-linktree/static/media/SFProDisplay-Regular.a46d78340fc99abcef03.woff",
     "static/media/profileimage.webp": "/my-linktree/static/media/profileimage.d9c2ccb5779b0552b9b2.webp",
+    "service-worker.js": "/my-linktree/service-worker.js",
     "index.html": "/my-linktree/index.html",
     "main.fe5ac604.css.map": "/my-linktree/static/css/main.fe5ac604.css.map",
-    "main.4c2e43ae.js.map": "/my-linktree/static/js/main.4c2e43ae.js.map"
+    "main.ba5a7077.js.map": "/my-linktree/static/js/main.ba5a7077.js.map"
   },
   "entrypoints": [
     "static/css/main.fe5ac604.css",
-    "static/js/main.4c2e43ae.js"
+    "static/js/main.ba5a7077.js"
   ]
 }
