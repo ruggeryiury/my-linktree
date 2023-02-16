@@ -1,7 +1,7 @@
 # Changelog
 
-## `0.4.1` February 9th, 2023
-- Added initial PWA features (service workers, etc).
+## `0.5.0` February 16th, 2023
+- Added PWA features.
 
 ## `0.4.0` December 28th, 2022
 - Now, the "Change Language" menu saves the preferred language into the `localStorate` as you change the language for the first time.

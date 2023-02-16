@@ -9,6 +9,8 @@ Linktree houses all the important links that you want to share with your audienc
 ## 🚀 Features
 - **Fully Responsive:** This web app was created under the *mobile-first*  concept. Responsive web design is a web design method that enables web to fit the screens of different devices automatically, displaying the content in a way that people feel comfortable. This greatly reduces users’ operations like panning, zooming and scrolling when browsing the web. *Mobile first*, as the name suggests, means that I started the product design from the mobile end which has more restrictions, then expand its features to create a tablet or desktop version.
 
+- **Works as a Progressive Web App:** Progressive Web Apps (PWAs) are web apps that use service workers, manifests, and other web-platform features in combination with progressive enhancement to give users an experience on par with native apps. PWAs provide a number of advantages to users — including being installable, progressively enhanced, responsively designed, re-engageable, linkable, discoverable, network independent, and secure.
+
 - **Multi-language support**: This web app has multi-language support, based on the client's navigator language. Basically, all text strings are functions that return strings based on key codes given as parameters on these funcions, that reads from locale files based on the client's navigator language. The language can be changed into the web app settings, located on the header that appears when you scroll down the page.
 
 ## ⚙️ Technologies
@@ -29,5 +31,5 @@ Linktree houses all the important links that you want to share with your audienc
 
 ## 🔄 Changelog
 - See the [Changelog](https://github.com/ruggeryiury/my-linktree/blob/master/CHANGELOG.md).
-	- *Current version: 0.4.1*
-	- *Deployed ver: 0.4.0*
+	- *Current version: 0.5.0*
+	- *Deployed ver: 0.5.0*
