@@ -2,13 +2,15 @@
 	"name": "my-linktree",
 	"version": "0.5.0",
 	"description": "My own Linktree created by scratch.",
+	"license": "GPL-3.0-or-later",
 	"keywords": [
 		"typescript",
 		"pwa",
 		"linktree",
-		"linktree-custom"
+		"linktree-custom",
+		"react",
+		"scss"
 	],
-	"private": false,
 	"homepage": "https://ruggeryiury.github.io/my-linktree",
 	"dependencies": {
 		"@testing-library/jest-dom": "^5.16.5",

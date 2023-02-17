@@ -4,7 +4,7 @@ Linktree houses all the important links that you want to share with your audienc
 # 💠 Table of Contents
 - [Features](#-features)
 - [Technologies](#%EF%B8%8F-technologies)
-- [Changelog](#-changelog)
+- [Changelog](https://github.com/ruggeryiury/my-linktree/blob/master/CHANGELOG.md)
 
 ## 🚀 Features
 - **Fully Responsive:** This web app was created under the *mobile-first*  concept. Responsive web design is a web design method that enables web to fit the screens of different devices automatically, displaying the content in a way that people feel comfortable. This greatly reduces users’ operations like panning, zooming and scrolling when browsing the web. *Mobile first*, as the name suggests, means that I started the product design from the mobile end which has more restrictions, then expand its features to create a tablet or desktop version.
@@ -14,8 +14,8 @@ Linktree houses all the important links that you want to share with your audienc
 - **Multi-language support**: This web app has multi-language support, based on the client's navigator language. Basically, all text strings are functions that return strings based on key codes given as parameters on these funcions, that reads from locale files based on the client's navigator language. The language can be changed into the web app settings, located on the header that appears when you scroll down the page.
 
 ## ⚙️ Technologies
-- [React App](https://create-react-app.dev/), using [TypeScript](https://www.typescriptlang.org/) +  template.
-	- [Node template information](https://www.npmjs.com/package/cra-template-pwa-typescript)
+- [React App](https://create-react-app.dev/), using [TypeScript](https://www.typescriptlang.org/) + PWA template.
+	- [CRA template information](https://www.npmjs.com/package/cra-template-pwa-typescript)
 	- *Start with NPM:* `npx create-react-app . --template pwa-typescript`
 - [Tailwind CSS](https://tailwindcss.com/): A utility-first CSS framework packed with classes that can be composed to build any design, directly in your markup.
 	-  *Install with NPM:*  `npm i -D tailwindcss`
@@ -27,9 +27,4 @@ Linktree houses all the important links that you want to share with your audienc
 	-  *Install with NPM:*  `npm i sass`
 - [Github Pages](https://www.npmjs.com/package/gh-pages): Publish to a gh-pages branch on GitHub (or any other branch on any other remote).
 	-  *Install with NPM:*  `npm i -D gh-pages`
-- [UGC 2 JSON Converter](https://github.com/ruggeryiury/ugc2json_converter): A self-made Python script to generate JSON files without needing to use explicit JSON structure. It's used on this web app to create locale files, as part of the *Multi-language support* feature. 
-
-## 🔄 Changelog
-- See the [Changelog](https://github.com/ruggeryiury/my-linktree/blob/master/CHANGELOG.md).
-	- *Current version: 0.5.0*
-	- *Deployed ver: 0.5.0*
+- [UGC 2 JSON Converter](https://github.com/ruggeryiury/ugc2json_converter): A self-made Python script to generate JSON files without needing to use explicit JSON structure. It's used on this web app to create locale files, as part of the *Multi-language support* feature.
