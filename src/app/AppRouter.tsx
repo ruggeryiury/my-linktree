@@ -1,34 +1,14 @@
-import { useContext, useEffect } from "react"
-import { AppContext } from "./AppProvider"
-import { HashRouter as Router, Routes, Route } from "react-router-dom"
-import IndexPage from "../pages/IndexPage"
-import langParser from "../utils/langParser"
-import getUserSession from "../utils/getUserSession"
+import { createHashRouter, RouterProvider, Route, createRoutesFromElements } from 'react-router-dom'
+import Root from '../pages/Root'
 
 const AppRouter = () => {
-    const Context = useContext(AppContext)
-
-    useEffect(() => {
-        const ManipulateUserSession = () => {
-            const session = getUserSession()
-
-            if (session) {
-                Context.setLang(session.lang)
-            } else {
-                Context.setLang(langParser(navigator.language))
-            }
-        }
-
-        ManipulateUserSession()
-    }, [])
-
-    useEffect(() => { }, [Context.lang])
+    const router = createHashRouter(
+        createRoutesFromElements(
+            <Route path='/' element={<Root />} />
+        )
+    )
     return (
-        <Router>
-            <Routes>
-                <Route index element={<IndexPage />} />
-            </Routes>
-        </Router>
+        <RouterProvider router={router} />
     )
 }
 

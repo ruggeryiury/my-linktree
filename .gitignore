@@ -27,3 +27,5 @@ yarn-error.log*
 *.ugc
 *.eot
 *.otf
+
+/src__*

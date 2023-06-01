@@ -8,6 +8,9 @@ module.exports = {
 	],
 	theme: {
 		extend: {
+			backgroundImage: {
+				bg: "url(/src/assets/images/bg.webp)"
+			},
 			screens: {
 				mobile: '0px',
 				'mobile-md': '320px',
@@ -21,7 +24,7 @@ module.exports = {
 				hd: '1290px'
 			},
 			fontFamily: {
-				sfpro: ["SF Pro Display", "sans-serif"]
+				inter: ['Inter', 'sans-serif']
 			},
 			colors: {
 				'main-white': '#EEE',

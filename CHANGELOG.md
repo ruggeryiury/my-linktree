@@ -1,5 +1,7 @@
 # Changelog
 
+## `0.6.0` June 1st, 2023
+- MAJOR UPDATE: All packages upgrades to latest versions, entire code refactored.
 ## `0.5.0` February 16th, 2023
 - Added PWA features.
 
