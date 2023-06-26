@@ -1,11 +1,12 @@
 {
 	"name": "my-linktree",
-	"version": "0.6.0",
+	"version": "1.0.0",
 	"main": "src/index.js",
 	"repository": "https://github.com/ruggeryiury/my-linktree.git",
 	"author": {
 		"name": "Ruggery Iury Corrêa",
-		"email": "ruggeryiury@gmail.com"
+		"email": "ruggeryiury@gmail.com",
+		"url": "https://ruggeryiury.github.io/my-linktree"
 	},
 	"private": true,
 	"description": "My own Linktree created by scratch.",
@@ -32,7 +33,6 @@
 		"i18next": "^22.5.0",
 		"i18next-browser-languagedetector": "^7.0.2",
 		"i18next-chained-backend": "^4.2.0",
-		"i18next-http-backend": "^2.2.1",
 		"i18next-localstorage-backend": "^4.1.1",
 		"immer": "^10.0.2",
 		"react": "^18.2.0",
@@ -42,19 +42,23 @@
 		"react-icons": "^4.9.0",
 		"react-redux": "^8.0.5",
 		"react-router-dom": "^6.11.2",
-		"react-waypoint": "^10.3.0",
 		"sass": "^1.62.1",
 		"typescript": "^5.0.4",
 		"web-vitals": "^3.3.2"
 	},
 	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^5.60.0",
+		"@typescript-eslint/parser": "^5.60.0",
 		"gh-pages": "^5.0.0",
+		"prettier": "^2.8.8",
 		"react-scripts": "5.0.1",
 		"tailwindcss": "^3.3.2"
 	},
 	"scripts": {
 		"predeploy": "npm run build",
 		"deploy": "gh-pages -d build",
+		"format": "prettier --write \"src/**/*.{js,ts,tsx,scss}",
+		"lint": "eslint src",
 		"start": "react-scripts start",
 		"build": "react-scripts build",
 		"test": "react-scripts test",

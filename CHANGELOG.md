@@ -1,7 +1,10 @@
 # Changelog
 
+## `1.0.0` June 22nd, 2023
+- MAJOR UPDATE: First definitive version.
+- Finished and added Spanish language.
 ## `0.6.0` June 1st, 2023
-- MAJOR UPDATE: All packages upgrades to latest versions, entire code refactored.
+- PACKAGES UPDATE: All packages upgrades to latest versions, entire code refactored.
 ## `0.5.0` February 16th, 2023
 - Added PWA features.
 
