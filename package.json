@@ -10,7 +10,7 @@
 	},
 	"private": true,
 	"description": "My own Linktree created by scratch.",
-	"license": "GPL-3.0-or-later",
+	"license": "MIT",
 	"keywords": [
 		"typescript",
 		"pwa",
@@ -58,7 +58,6 @@
 		"predeploy": "npm run build",
 		"deploy": "gh-pages -d build",
 		"format": "prettier --write \"src/**/*.{js,ts,tsx,scss}",
-		"lint": "eslint src",
 		"start": "react-scripts start",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
