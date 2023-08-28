@@ -18,10 +18,7 @@ const RootHeader = () => {
     scrollY > 60 ? setHeaderAppearance(true) : setHeaderAppearance(false)
   }
 
-  const headerClasses = clsx(
-    'flex-row py-3 w-full laptop:w-[60rem] backdrop-blur-[2px] fixed duration-[350ms] bg-gradient-to-br from-[#1aaeab]/80 to-[#009575]/80 px-4 items-center border-b border-main-white/20 rounded-none laptop:rounded-br-md laptop:rounded-bl-md z-10',
-    shouldHeaderAppear ? 'top-0' : '-top-full'
-  )
+  const headerClasses = clsx('flex-row py-3 w-full laptop:w-[60rem] backdrop-blur-[2px] fixed duration-[350ms] bg-gradient-to-br from-[#1aaeab]/80 to-[#009575]/80 px-4 items-center border-b border-main-white/20 rounded-none laptop:rounded-br-md laptop:rounded-bl-md z-10', shouldHeaderAppear ? 'top-0' : '-top-full')
 
   useEffect(() => {
     window.addEventListener('scroll', (ev) => activateHeader((ev.currentTarget as Window).scrollY))

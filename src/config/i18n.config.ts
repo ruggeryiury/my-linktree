@@ -11,7 +11,7 @@ i18n
   .use(initReactI18next)
   .init({
     backend: {
-      backends: [LocalStorageBackend]
+      backends: [LocalStorageBackend],
     },
     fallbackLng: 'en',
     detection: {

@@ -1,5 +1,15 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 
+type SettingsModalStateTypes = 'closed' | 'init' | 'lang'
+type LinksModalTypes = 'facebook' | 'twitter' | 'instagram' | 'twitch' | 'discord' | 'linkedin' | 'github' | 'soundcloud' | 'gmail' | 'ngl'
+
+interface SessionInitStateProps {
+  isSettingsActivated: boolean
+  settingsModalState: SettingsModalStateTypes
+  isAnyLinkActivated: boolean
+  linksModalType: LinksModalTypes
+}
+
 const initialState: SessionInitStateProps = {
   isSettingsActivated: false,
   settingsModalState: 'closed',
@@ -11,7 +21,7 @@ const session = createSlice({
   name: 'session',
   initialState,
   reducers: {
-    update(state, action: PayloadAction<Partial<typeof initialState>>) {
+    update(state, action: PayloadAction<Partial<SessionInitStateProps>>) {
       return { ...state, ...action.payload }
     },
   },

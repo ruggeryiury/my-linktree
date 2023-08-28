@@ -76,8 +76,7 @@ export const TranslationPT = {
   gmail_desc: 'Meu Email pessoal.',
   ngl: 'Pergunte-me Algo',
   ngl_username: 'Via NGL',
-  ngl_desc:
-    'Faça uma pergunta para mim! As perguntas serão entregues anonimamente e poderão ser respondidas via Stories no meu Instagram pessoal.',
+  ngl_desc: 'Faça uma pergunta para mim! As perguntas serão entregues anonimamente e poderão ser respondidas via Stories no meu Instagram pessoal.',
   access_link: 'Acessar Link da Conta',
   copy_user: 'Copiar Username',
   send_email: 'Me envie um Email',
@@ -117,8 +116,7 @@ export const TranslationES = {
   gmail_desc: 'Mi Email personal.',
   ngl: 'Pregúntame Algo',
   ngl_username: 'Via NGL',
-  ngl_desc:
-    'Haceme alguna pregunta! Las preguntas serán enviadas anonimamente y podrán ser contestadas via Stories em mi Instagram personal.',
+  ngl_desc: 'Haceme alguna pregunta! Las preguntas serán enviadas anonimamente y podrán ser contestadas via Stories em mi Instagram personal.',
   access_link: 'Accesar Link de la cuenta',
   copy_user: 'Copiar Username',
   send_email: 'Envíame un Email',

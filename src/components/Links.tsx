@@ -102,17 +102,9 @@ const Links = () => {
           {type === 'soundcloud' ? <ImSoundcloud2 className="text-2xl laptop:text-4xl" /> : null}
           {type === 'gmail' ? <SiGmail className="text-2xl laptop:text-4xl" /> : null}
           {type === 'ngl' ? <RiQuestionnaireFill className="text-2xl laptop:text-4xl" /> : null}
-          <h1 className="w-full px-8 font-normal text-sm tablet:text-base text-main-white/75 mb-4 mt-2">
-            {t(`${type}_desc`)}
-          </h1>
+          <h1 className="w-full px-8 font-normal text-sm tablet:text-base text-main-white/75 mb-4 mt-2">{t(`${type}_desc`)}</h1>
           <div className="bg-[#333] w-full h-[1px]" />
-          {type === 'facebook' ||
-          type === 'twitter' ||
-          type === 'instagram' ||
-          type === 'twitch' ||
-          type === 'linkedin' ||
-          type === 'github' ||
-          type === 'soundcloud' ? (
+          {type === 'facebook' || type === 'twitter' || type === 'instagram' || type === 'twitch' || type === 'linkedin' || type === 'github' || type === 'soundcloud' ? (
             <button
               className="font-light text-lg tablet:text-xl w-full h-12 tablet:h-14 bg-transparent hover:bg-[#ffffff0f] duration-100"
               onClick={(ev) => window.open(t(`${type}_link`)!, '_blank')}
@@ -136,12 +128,7 @@ const Links = () => {
               {t('send_email')}
             </button>
           ) : null}
-          {type === 'twitter' ||
-          type === 'instagram' ||
-          type === 'twitch' ||
-          type === 'discord' ||
-          type === 'github' ||
-          type === 'soundcloud' ? (
+          {type === 'twitter' || type === 'instagram' || type === 'twitch' || type === 'discord' || type === 'github' || type === 'soundcloud' ? (
             <button
               className="flex font-light text-lg tablet:text-xl w-full h-12 tablet:h-14 items-center bg-transparent hover:bg-[#ffffff0f] duration-100 justify-center"
               onClick={(ev) => CopyToClipboard()}

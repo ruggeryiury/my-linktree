@@ -26,9 +26,7 @@ export const Presentation = () => {
       <div className="bg-gradient-to-br from-[#1aaeab] to-[#009575] rounded-md px-4 py-2 mb-2 text-base mobile-md:text-base mobile-lg:text-lg border border-main-black/10">
         <h1>{t('welcome_text')}</h1>
       </div>
-      <p className="w-full tablet:w-[24rem] laptop:w-[32rem] mb-6 text-[#111] drop-shadow-md text-xs mobile-md:text-sm mobile-lg:text-base z-0">
-        {t('index_desc')}
-      </p>
+      <p className="w-full tablet:w-[24rem] laptop:w-[32rem] mb-6 text-[#111] drop-shadow-md text-xs mobile-md:text-sm mobile-lg:text-base z-0">{t('index_desc')}</p>
     </>
   )
 }
@@ -39,9 +37,7 @@ export const MyLinks = () => {
   return (
     <>
       <div className="items-center w-full mb-4">
-        <h1 className="font-bold text-xs tablet:text-sm laptop:text-base text-[#111] drop-shadow-md mb-2">
-          {t('my_socialnetworks').toUpperCase()}
-        </h1>
+        <h1 className="font-bold text-xs tablet:text-sm laptop:text-base text-[#111] drop-shadow-md mb-2">{t('my_socialnetworks').toUpperCase()}</h1>
         <LinkButton
           type="facebook"
           disabled
@@ -52,22 +48,16 @@ export const MyLinks = () => {
         <LinkButton type="discord" />
       </div>
       <div className="items-center w-full mb-4">
-        <h1 className="font-bold text-xs tablet:text-sm laptop:text-base text-[#111] drop-shadow-md mb-2">
-          {t('my_profnetworks').toUpperCase()}
-        </h1>
+        <h1 className="font-bold text-xs tablet:text-sm laptop:text-base text-[#111] drop-shadow-md mb-2">{t('my_profnetworks').toUpperCase()}</h1>
         <LinkButton type="linkedin" />
         <LinkButton type="github" />
       </div>
       <div className="items-center w-full mb-4">
-        <h1 className="font-bold text-xs tablet:text-sm laptop:text-base text-[#111] drop-shadow-md mb-2">
-          {t('my_music').toUpperCase()}
-        </h1>
+        <h1 className="font-bold text-xs tablet:text-sm laptop:text-base text-[#111] drop-shadow-md mb-2">{t('my_music').toUpperCase()}</h1>
         <LinkButton type="soundcloud" />
       </div>
       <div className="items-center w-full mb-4">
-        <h1 className="font-bold text-xs tablet:text-sm laptop:text-base text-[#111] drop-shadow-md mb-2">
-          {t('my_other').toUpperCase()}
-        </h1>
+        <h1 className="font-bold text-xs tablet:text-sm laptop:text-base text-[#111] drop-shadow-md mb-2">{t('my_other').toUpperCase()}</h1>
         <LinkButton type="gmail" />
         {/* <LinkButton type="ngl" /> */}
       </div>
